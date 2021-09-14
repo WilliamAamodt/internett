@@ -1,0 +1,15 @@
+﻿@model IEnumerable<WebApplication.Models.Enteties.Product>
+
+@{
+    ViewData["Title"] = "Product Page";
+}
+
+
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.Name
+        <hr />
+    </div>
+}
